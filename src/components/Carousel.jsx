@@ -1,13 +1,9 @@
 
-
-
-import  { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 const Carousel = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const images = [
-    "/src/assets/img/img1.jpg",
-   
-
+    "/src/assets/img/img1.jpg"
   ];
   useEffect(() => {
     const interval = setInterval(() => {
