@@ -1,6 +1,6 @@
-import img1 from '/Tu-Sonrisa/public/img1.jpg'
-import img2 from "/Tu-Sonrisa/public/img2.jpg";
-import img3 from "/Tu-Sonrisa/public/img3.jpg";
+import img1 from '/public/img1.jpg'
+import img2 from "/public/img2.jpg";
+import img3 from "/public/img3.jpg";
 
 
 import  { useState, useEffect } from "react";
