@@ -1,0 +1,15 @@
+
+.btn-reserva{
+    @apply w-36 h-10 bg-red-500 text-center mt-3 rounded-md hover:bg-red-600 transition duration-300 
+}
+
+.nav-btn{
+    @apply px-5 cursor-pointer bg-transparent border-none outline-none text-white text-3xl opacity-60
+}
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
