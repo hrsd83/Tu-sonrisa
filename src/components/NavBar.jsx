@@ -45,11 +45,11 @@ const NavBar = () => {
 
       <div className=" container mx-auto flex px-8 xl:px-0 mt-10 ">
         <div className="flex flex-grow">
-          <img src="/src/assets/img/logo_sonrisa.png"></img>
+          <img src="public/logo_sonrisa.png"></img>
         </div>
         <div
           onClick={() => setNav(!nav)}
-          className="cursor-pointer pr-4 z-10 text-white  flex lg:hidden"
+          className="cursor-pointer pr-2 z-10 text-white  flex lg:hidden"
         >
           {nav ? (
             <AiFillCloseCircle size={30} />
@@ -76,7 +76,7 @@ const NavBar = () => {
         </div>
         {/* Menu Toggle */}
         {nav && (
-          <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-primary text-white">
+          <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-primary text-white opacity-95">
             {linksToggle.map(({ id, link }) => (
               <li
                 key={id}
