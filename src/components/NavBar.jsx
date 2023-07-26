@@ -2,7 +2,7 @@ import { useState } from "react";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-scroll";
-import logo_sonrisa from '/public/logo_sonrisa.png';
+// import logo_sonrisa from '/public/logo_sonrisa.png';
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -46,7 +46,7 @@ const NavBar = () => {
 
       <div className=" container mx-auto flex px-8 xl:px-0 mt-10 ">
         <div className="flex flex-grow">
-          <img src={logo_sonrisa}></img>
+          <img src="/src/assets/img/logo_sonrisa.png"></img>
         </div>
         <div
           onClick={() => setNav(!nav)}
