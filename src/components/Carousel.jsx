@@ -1,15 +1,11 @@
 
-import img1 from "/Tu-Sonrisa/public/img1.jpg"
 
 
 
 import  { useState, useEffect } from "react";
 const Carousel = () => {
   const [currentImage, setCurrentImage] = useState(0);
-  const images = [
-    {img1}
-    
-  ];
+  const images = ["/img1.jpg", "/img2.jpg", "/img3.jpg"];
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prevImage) => (prevImage + 1) % images.length);
