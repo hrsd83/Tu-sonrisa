@@ -1,12 +1,14 @@
-import img1 from '/public/img1.jpg'
-import img2 from "/public/img2.jpg";
-import img3 from "/public/img3.jpg";
+
 
 
 import  { useState, useEffect } from "react";
 const Carousel = () => {
   const [currentImage, setCurrentImage] = useState(0);
-  const images = [{ img1 }, { img2 }, { img3 }];
+  const images = [
+    "/src/assets/img/img1.jpg",
+    "/src/assets/img/img1.jpg ",
+    "/src/assets/img/img1.jpg ",
+  ];
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prevImage) => (prevImage + 1) % images.length);
