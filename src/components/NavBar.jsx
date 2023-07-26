@@ -45,7 +45,7 @@ const NavBar = () => {
 
       <div className=" container mx-auto flex px-8 xl:px-0 mt-10 ">
         <div className="flex flex-grow">
-          <img src="public/logo_sonrisa.png"></img>
+          <img src="/public/logo_sonrisa.png"></img>
         </div>
         <div
           onClick={() => setNav(!nav)}
