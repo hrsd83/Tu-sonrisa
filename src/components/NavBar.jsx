@@ -2,6 +2,7 @@ import { useState } from "react";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-scroll";
+import logo_sonrisa from '/public/logo_sonrisa.png';
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -45,7 +46,7 @@ const NavBar = () => {
 
       <div className=" container mx-auto flex px-8 xl:px-0 mt-10 ">
         <div className="flex flex-grow">
-          <img src="/public/logo_sonrisa.png"></img>
+          <img src={logo_sonrisa}></img>
         </div>
         <div
           onClick={() => setNav(!nav)}
@@ -60,7 +61,11 @@ const NavBar = () => {
 
         <div className="lg:flex hidden  flex-grow text-2xl  justify-evenly mt-5">
           {links.map(({ id, link }) => (
-            <a key={id} href="" className=" text-white text-center rounded-md mr-8 w-44 h-10 hover:bg-white hover:text-primary transition duration-300  cursor-pointer">
+            <a
+              key={id}
+              href=""
+              className=" text-white text-center rounded-md mr-8 w-44 h-10 hover:bg-white hover:text-primary transition duration-300  cursor-pointer"
+            >
               {link}
             </a>
           ))}
@@ -97,7 +102,6 @@ const NavBar = () => {
         )}
       </div>
     </nav>
-    
   );
   
 };
