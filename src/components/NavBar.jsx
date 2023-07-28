@@ -54,7 +54,7 @@ const NavBar = () => {
         >
           {nav ? (
             <AiFillCloseCircle size={30} />
-          ) : (
+          ) :(
             <RxHamburgerMenu size={30} />
           )}
         </div>
