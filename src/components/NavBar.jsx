@@ -33,7 +33,7 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className=" bg-primary py-6 relative">
+    <nav className=" w-screen bg-primary py-6 relative">
       <div className="w-full hidden sm:hidden lg:flex  items-center text-center justify-evenly h-12 bg-black absolute top-0 ">
         <p className="text-xl  text-red-600 animate-bounce">
           EMERGENCIAS ODONTOLÓGICAS
@@ -54,7 +54,7 @@ const NavBar = () => {
         >
           {nav ? (
             <AiFillCloseCircle size={30} />
-          ) :(
+          ) : (
             <RxHamburgerMenu size={30} />
           )}
         </div>

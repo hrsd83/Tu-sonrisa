@@ -15,7 +15,7 @@ const Carousel = () => {
     return () => clearInterval(interval);
   }, [images.length]);
   return (
-    <section className="w-full h-[250px] lg:h-[450px]  md:block relative  -z-50  ">
+    <section className="w-full  mx-auto h-[250px] lg:h-[450px]  md:block relative  -z-50  ">
       {images.map((image, index) => (
         <img
           key={index}
