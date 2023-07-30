@@ -2,7 +2,7 @@ import { useState } from "react";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-scroll";
-import logo_sonrisa from '../assets/img/logo_sonrisa.png';
+// import logo_sonrisa from '../assets/img/logo_sonrisa.png';
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -33,7 +33,7 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className=" w-screen bg-primary py-6 relative">
+    <nav className=" w-full h-full  bg-primary py-6 relative">
       <div className="w-full hidden sm:hidden lg:flex  items-center text-center justify-evenly h-12 bg-black absolute top-0 ">
         <p className="text-xl  text-red-600 animate-bounce">
           EMERGENCIAS ODONTOLÓGICAS
@@ -46,7 +46,9 @@ const NavBar = () => {
 
       <div className=" container mx-auto flex px-8 xl:px-0 mt-10 ">
         <div className="flex flex-grow">
-          <img src={logo_sonrisa}></img>
+          <a href="#">
+            <img src="carousel/logo_sonrisa.png"></img>
+          </a>
         </div>
         <div
           onClick={() => setNav(!nav)}
@@ -81,7 +83,7 @@ const NavBar = () => {
         </div>
         {/* Menu Toggle */}
         {nav && (
-          <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-primary text-white opacity-95">
+          <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-primary text-white  opacity-95">
             {linksToggle.map(({ id, link }) => (
               <li
                 key={id}
