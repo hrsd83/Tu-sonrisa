@@ -13,13 +13,13 @@ const Carousel = () => {
     return () => clearInterval(interval);
   }, [images.length]);
   return (
-    <section className="w-full  mx-auto h-[250px] lg:h-[450px]  md:block relative -z-50  ">
+    <section className="w-full  mx-auto h-[350px] lg:h-[500px]  md:block relative -z-50  ">
       {images.map((image, index) => (
         <img
           key={index}
           src={image}
           alt={`Imagen ${index + 1}`}
-          className={`absolute top-[180px] left-0 w-full h-full transition-opacity duration-500 ${
+          className={`absolute top-[150px] left-0 w-full h-full  transition-opacity duration-500 ${
             index === currentImage ? "opacity-100" : "opacity-0"
           }`}
         />

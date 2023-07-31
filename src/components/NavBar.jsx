@@ -33,7 +33,7 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className=" w-full h-[180px]  bg-primary py-6 fixed  z-50">
+    <nav className=" w-full h-[150px]  bg-primary py-6 fixed  z-50">
       <div className="w-full hidden sm:hidden lg:flex  items-center text-center justify-evenly h-12 bg-black absolute top-0 ">
         <p className="text-xl  text-red-600 animate-bounce">
           EMERGENCIAS ODONTOLÓGICAS

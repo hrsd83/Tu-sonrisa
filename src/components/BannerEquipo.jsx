@@ -45,7 +45,8 @@ const BannerEquipo = () => {
               Trabaja en {text}
             </h2>
 
-            <div className="flex mb-4 bg mt-20 items-center justify-center">
+            <div className="flex mb-4 bg mt-20 items-center justify-center 
+             ">
               <a
                 href="enlace-1"
                 className="bg-primary hover:bg-violet-600 rounded-md text-white text-center text-xl px-12 py-3 mr-2  md:px-10 md:py-0 lg:px-10 lg:py-3 "
@@ -60,11 +61,11 @@ const BannerEquipo = () => {
               </a>
             </div>
           </div>
-          <div className="w-full p-4 bg-primary rounded-xl opacity-95 shadow-2xl shadow-primary  ">
+          <div className="w-full  bg-primary rounded-xl opacity-95 shadow-2xl shadow-primary    ">
             <img
               src="/banner/imgBanner.webp"
               alt="Imagen"
-              className="w-[500px] rounded-xl shadow-2xl shadow-primary float-right p-5   "
+              className="w-[500px] rounded-xl shadow-2xl shadow-primary float-right    "
             />
           </div>
         </div>
