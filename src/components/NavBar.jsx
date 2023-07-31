@@ -33,7 +33,7 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className=" w-full h-full  bg-primary py-6 relative">
+    <nav className=" w-full h-[180px]  bg-primary py-6 fixed  z-50">
       <div className="w-full hidden sm:hidden lg:flex  items-center text-center justify-evenly h-12 bg-black absolute top-0 ">
         <p className="text-xl  text-red-600 animate-bounce">
           EMERGENCIAS ODONTOLÓGICAS
@@ -83,7 +83,7 @@ const NavBar = () => {
         </div>
         {/* Menu Toggle */}
         {nav && (
-          <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-primary text-white  opacity-95">
+          <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-primary text-white  opacity-95 ">
             {linksToggle.map(({ id, link }) => (
               <li
                 key={id}
