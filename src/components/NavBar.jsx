@@ -83,11 +83,11 @@ const NavBar = () => {
         </div>
         {/* Menu Toggle */}
         {nav && (
-          <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-primary text-white  opacity-95 ">
+          <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-primary text-white    opacity-95 ">
             {linksToggle.map(({ id, link }) => (
               <li
                 key={id}
-                className="px-4 cursor-pointer capitalize py-6 text-2xl "
+                className="px-4 cursor-pointer capitalize py-6 text-2xl  "
               >
                 <Link
                   onClick={() => setNav(!nav)}

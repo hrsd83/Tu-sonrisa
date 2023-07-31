@@ -1,6 +1,7 @@
 import NavBar from "./components/NavBar"
 import Carousel from "./components/Carousel"
 import Hero from "./components/Hero";
+import BannerEquipo from "./components/BannerEquipo";
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
       <NavBar />
       <Carousel />
       <Hero />
+      <BannerEquipo/>
     </>
   );
 }

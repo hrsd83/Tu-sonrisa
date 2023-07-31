@@ -1,12 +1,12 @@
 const Hero = () => {
   return (
-    <section className="w-full h-screen flex flex-col text-white items-center mt-52 -z-50">
-      <div className="h-[50px] w-[350px]  sm:h-[50px]  lg:w-[500px]  lg:h-[60px] text-2xl flex   bg-primary text-center items-center justify-center lg:text-4xl mt-20 rounded-md -z-50  ">
+    <section className="w-full h-full flex flex-col text-white items-center mt-52 -z-50">
+      <div className="h-[50px] w-[350px]  sm:h-[50px]  lg:w-[500px]  lg:h-[60px] text-2xl flex   bg-primary text-center items-center justify-center lg:text-4xl mt-20 rounded-md -z-50   ">
         <h1>NUESTRAS ESPECIALIDADES</h1>
       </div>
-      <div className="w-full  h-full container   mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-4 sm:gap-8 md:gap-2 lg:gap-3 xl:gap-10 px-5 lg:px-0 -z-50  ">
+      <div className="w-full  h-full container   mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-4 sm:gap-8 md:gap-2 lg:gap-3 xl:gap-10 px-5 lg:px-0    ">
         {/* Card 1 */}
-        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4 shadow-md lg:col-start-1   ">
+        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-1  shadow-2xl shadow-primary  ">
           <img
             src="especialidades/odontologiaGeneral.png"
             alt="Imagen 1"
@@ -32,7 +32,7 @@ const Hero = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4 shadow-md lg:col-start-2  ">
+        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-2 shadow-2xl shadow-primary  ">
           <img
             src="especialidades/ortodoncia.png"
             alt="Imagen 1"
@@ -58,7 +58,7 @@ const Hero = () => {
         </div>
 
         {/* Card 3 */}
-        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4 shadow-md lg:col-start-3  ">
+        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-3 shadow-2xl shadow-primary  ">
           <img
             src="especialidades/odontopediatria.png"
             alt="Imagen 1"
@@ -83,7 +83,7 @@ const Hero = () => {
           </div>
         </div>
         {/* Card 4 */}
-        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4 shadow-md lg:col-start-4  ">
+        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-4 shadow-2xl shadow-primary  ">
           <img
             src="/especialidades/implantes.png"
             alt="Imagen 1"
@@ -109,7 +109,7 @@ const Hero = () => {
         </div>
 
         {/* CARD 5 GRILLA 2 */}
-        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4 shadow-md lg:col-start-2 ">
+        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-2 shadow-2xl shadow-primary ">
           <img
             src="/especialidades/endodoncia.png"
             alt="Imagen 1"
@@ -134,7 +134,7 @@ const Hero = () => {
           </div>
         </div>
         {/* CARD 6 GRILLA 2 */}
-        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4 shadow-md lg:col-start-3  ">
+        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-3 shadow-2xl shadow-primary  ">
           <img
             src="/especialidades/diseñoSonrisa.png"
             alt="Imagen 1"
@@ -159,7 +159,7 @@ const Hero = () => {
           </div>
         </div>
         {/* CARD 7 GRILLA 3 */}
-        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4 shadow-md lg:col-start-4  ">
+        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-4  shadow-2xl shadow-primary ">
           <img
             src="/especialidades/maxilofacial.png"
             alt="Imagen 1"
@@ -184,7 +184,7 @@ const Hero = () => {
           </div>
         </div>
         {/* CARD 8 GRILLA 3 */}
-        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4 shadow-md lg:col-start-2  ">
+        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-2 shadow-2xl shadow-primary  ">
           <img
             src="/especialidades/protesis.png"
             alt="Imagen 1"
@@ -209,7 +209,7 @@ const Hero = () => {
           </div>
         </div>
         {/* CARD 9  */}
-        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4 shadow-md lg:col-start-3 ">
+        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-3 shadow-2xl shadow-primary ">
           <img
             src="/especialidades/periodoncia.png"
             alt="Imagen 1"
@@ -234,7 +234,7 @@ const Hero = () => {
           </div>
         </div>
         {/* CARD 10 */}
-        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4 shadow-md lg:col-start-4  ">
+        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-4 shadow-2xl shadow-primary  ">
           <img
             src="/especialidades/articulacion.png"
             alt="Imagen 1"
@@ -259,7 +259,7 @@ const Hero = () => {
           </div>
         </div>
         {/* CARD 11 */}
-        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4 shadow-md lg:col-start-5  ">
+        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-5 shadow-2xl shadow-primary  ">
           <img
             src="/especialidades/fonoaudiologia.png"
             alt="Imagen 1"
@@ -300,7 +300,6 @@ const Hero = () => {
           />
         </div> */}
       </div>
-      
     </section>
   );
 };
