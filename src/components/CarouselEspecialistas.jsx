@@ -88,7 +88,7 @@ const Carousel = () => {
       {
         breakpoint: 640,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
@@ -136,119 +136,4 @@ const Carousel = () => {
   );
 };
 export default Carousel;
-// import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-// import "tailwindcss/tailwind.css";
 
-// const images = [
-//   {
-//     id: 1,
-//     src: "/especialistas/billgates.jpg",
-//     name: "Nombre 1",
-//     position: "Cargo 1",
-//   },
-//   {
-//     id: 2,
-//     src: "/especialistas/billgates.jpg",
-//     name: "Nombre 2",
-//     position: "Cargo 2",
-//   },
-//   {
-//     id: 3,
-//     src: "/especialistas/billgates.jpg",
-//     name: "Nombre 2",
-//     position: "Cargo 2",
-//   },
-//   {
-//     id: 4,
-//     src: "/especialistas/billgates.jpg",
-//     name: "Nombre 2",
-//     position: "Cargo 2",
-//   },
-//   {
-//     id: 5,
-//     src: "/especialistas/billgates.jpg",
-//     name: "Nombre 2",
-//     position: "Cargo 2",
-//   },
-//   {
-//     id: 6,
-//     src: "/especialistas/billgates.jpg",
-//     name: "Nombre 2",
-//     position: "Cargo 2",
-//   },
-//   {
-//     id: 7,
-//     src: "/especialistas/billgates.jpg",
-//     name: "Nombre 2",
-//     position: "Cargo 2",
-//   },
-//   {
-//     id: 8,
-//     src: "/especialistas/billgates.jpg",
-//     name: "Nombre 2",
-//     position: "Cargo 2",
-//   },
-//   {
-//     id: 9,
-//     src: "/especialistas/billgates.jpg",
-//     name: "Nombre 2",
-//     position: "Cargo 2",
-//   },
-
-//   // Agrega más imágenes y detalles aquí
-// ];
-
-// const Carousel = () => {
-//   const settings = {
-//     dots: true,
-//     infinite: true,
-//     speed: 500,
-//     slidesToShow: 5, // Mostrar 3 imágenes a la vez
-//     slidesToScroll:5,
-//     responsive: [
-//       {
-//         breakpoint: 640, // Dispositivos pequeños
-//         settings: {
-//           slidesToShow: 30,
-//           slidesToScroll: 30,
-//         },
-//       },
-//       {
-//         breakpoint: 768, // Dispositivos medianos
-//         settings: {
-//           slidesToShow: 2,
-//           slidesToScroll: 2,
-//         },
-//       },
-//       {
-//         breakpoint: 1024, // Dispositivos grandes
-//         settings: {
-//           slidesToShow: 1,
-//           slidesToScroll: 1,
-//         },
-//       },
-//     ],
-//   };
-
-//   return (
-//     <Slider {...settings}>
-//       {images.map((image) => (
-//         <div key={image.id} className="px-4 mt-10">
-//           <img
-//             src={image.src}
-//             alt={image.name}
-//             className="rounded-full w-15 h-15 mx-auto"
-//           />
-//           <div className="text-center mt-4">
-//             <h3 className="text-lg font-semibold">{image.name}</h3>
-//             <p className="text-gray-500">{image.position}</p>
-//           </div>
-//         </div>
-//       ))}
-//     </Slider>
-//   );
-// };
-
-// export default Carousel;
