@@ -6,7 +6,7 @@ const Hero = () => {
       </div>
       <div className="w-full  h-full container   mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-4 sm:gap-8 md:gap-2 lg:gap-3 xl:gap-10 px-5 lg:px-0    ">
         {/* Card 1 */}
-        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-1  shadow-2xl shadow-primary  ">
+        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-1  shadow-lg shadow-primary  ">
           <img
             src="especialidades/odontologiaGeneral.png"
             alt="Imagen 1"
@@ -32,7 +32,7 @@ const Hero = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-2 shadow-2xl shadow-primary  ">
+        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-2 shadow-lg shadow-primary  ">
           <img
             src="especialidades/ortodoncia.png"
             alt="Imagen 1"
@@ -58,7 +58,7 @@ const Hero = () => {
         </div>
 
         {/* Card 3 */}
-        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-3 shadow-2xl shadow-primary  ">
+        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-3 shadow-lg shadow-primary  ">
           <img
             src="especialidades/odontopediatria.png"
             alt="Imagen 1"
@@ -83,7 +83,7 @@ const Hero = () => {
           </div>
         </div>
         {/* Card 4 */}
-        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-4 shadow-2xl shadow-primary  ">
+        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-4 shadow-lg shadow-primary  ">
           <img
             src="/especialidades/implantes.png"
             alt="Imagen 1"
@@ -109,7 +109,7 @@ const Hero = () => {
         </div>
 
         {/* CARD 5 GRILLA 2 */}
-        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-2 shadow-2xl shadow-primary ">
+        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-2 shadow-lg shadow-primary ">
           <img
             src="/especialidades/endodoncia.png"
             alt="Imagen 1"
@@ -134,7 +134,7 @@ const Hero = () => {
           </div>
         </div>
         {/* CARD 6 GRILLA 2 */}
-        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-3 shadow-2xl shadow-primary  ">
+        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-3 shadow-lg shadow-primary  ">
           <img
             src="/especialidades/diseñoSonrisa.png"
             alt="Imagen 1"
@@ -159,7 +159,7 @@ const Hero = () => {
           </div>
         </div>
         {/* CARD 7 GRILLA 3 */}
-        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-4  shadow-2xl shadow-primary ">
+        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-4  shadow-lg shadow-primary ">
           <img
             src="/especialidades/maxilofacial.png"
             alt="Imagen 1"
@@ -184,7 +184,7 @@ const Hero = () => {
           </div>
         </div>
         {/* CARD 8 GRILLA 3 */}
-        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-2 shadow-2xl shadow-primary  ">
+        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-2 shadow-lg shadow-primary  ">
           <img
             src="/especialidades/protesis.png"
             alt="Imagen 1"
@@ -209,7 +209,7 @@ const Hero = () => {
           </div>
         </div>
         {/* CARD 9  */}
-        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-3 shadow-2xl shadow-primary ">
+        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-3 shadow-lg shadow-primary ">
           <img
             src="/especialidades/periodoncia.png"
             alt="Imagen 1"
@@ -234,14 +234,14 @@ const Hero = () => {
           </div>
         </div>
         {/* CARD 10 */}
-        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-4 shadow-2xl shadow-primary  ">
+        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-4 shadow-lg shadow-primary  ">
           <img
             src="/especialidades/articulacion.png"
             alt="Imagen 1"
             className="w-[140px] h-[80px] lg:w-[120px] lg:h-[70px]  xl:w-[140px] xl:h-[80px] mt-2  "
           />
           <h2 className="text-[16px] lg:text-[13px] xl:text-[16px] font-bold text-center ">
-            ATM – ARTICULACIÓN TÉMPORO MANDIBULAR
+            ATM-ARTICULACIÓN TÉMPORO MANDIBULAR
           </h2>
           <div className=" flex min-w-max h-12 justify-around   items-center sm:w-full lg:w-full lg:mt-4    ">
             <a
@@ -259,7 +259,7 @@ const Hero = () => {
           </div>
         </div>
         {/* CARD 11 */}
-        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-5 shadow-2xl shadow-primary  ">
+        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-5 shadow-lg   shadow-primary  ">
           <img
             src="/especialidades/fonoaudiologia.png"
             alt="Imagen 1"
@@ -283,22 +283,6 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        {/* IMAGEN 1 */}
-        {/* <div className="w-full  lg:w-[400px]  md:h-[220px] flex flex-col items-center justify-center md:px-4 relative   ">
-          <img
-            src="/src/assets/img/diente4.png"
-            alt="Imagen 1"
-            className=" lg:w-[400px] lg:h-[400px] translate-x-[1150px] -translate-y-[650px]  opacity-60 hidden sm:hidden xl:block  absolute object-cover rotate-12 "
-          />
-        </div> */}
-        {/* IMAGEN 2 */}
-        {/* <div className="w-full lg:w-[400px]  md:h-[220px] flex flex-col items-center justify-center md:px-4 relative   ">
-          <img
-            src="/src/assets/img/herramientas.avif"
-            alt="Imagen 1"
-            className=" lg:w-[350px] lg:h-[350px] -translate-x-[450px] -translate-y-[350px]  opacity-60 hidden sm:hidden xl:block  top-[10%] right-[60%] absolute object-cover  "
-          />
-        </div> */}
       </div>
     </section>
   );

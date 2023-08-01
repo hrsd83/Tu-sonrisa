@@ -36,7 +36,7 @@ const BannerEquipo = () => {
      }, []);
   
   return (
-    <section className="bg-white py-8 mt-10 opacity-95 shadow-2xl shadow-primary">
+    <section className="bg-white py-8 mt-10 opacity-95">
       <div className="container mx-auto ">
         {/* <h2 className="text-5xl font-bold  mb-4">Trabaja en nuestro equipo</h2> */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
@@ -61,11 +61,11 @@ const BannerEquipo = () => {
               </a>
             </div>
           </div>
-          <div className="w-full  bg-primary rounded-xl opacity-95 shadow-2xl shadow-primary    ">
+          <div className="w-full  bg-primary rounded-xl opacity-95   ">
             <img
               src="/banner/imgBanner.webp"
               alt="Imagen"
-              className="w-[500px] rounded-xl shadow-2xl shadow-primary float-right    "
+              className="w-[500px]   float-right    "
             />
           </div>
         </div>
