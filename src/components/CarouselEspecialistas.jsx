@@ -81,9 +81,9 @@ const Carousel = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 6,
-    slidesToScroll: 1,
+    slidesToScroll:1,
     responsive: [
       {
         breakpoint: 640,
@@ -119,7 +119,7 @@ const Carousel = () => {
       </div>
       <Slider ref={sliderRef} {...settings}>
         {images.map((image) => (
-          <div key={image.id} className="px-1 mt-16 ">
+          <div key={image.id} className="px-0 mt-16 ">
             <img
               src={image.src}
               alt={image.name}

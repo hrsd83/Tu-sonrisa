@@ -6,7 +6,7 @@ const Hero = () => {
       </div>
       <div className="w-full  h-full container   mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-4 sm:gap-8 md:gap-2 lg:gap-3 xl:gap-10 px-5 lg:px-0    ">
         {/* Card 1 */}
-        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-1  shadow-lg shadow-primary  ">
+        <div className="max-w-full sm:w-[300px] sm:h-[230px] md:w-[245px] md:h-[230px]  lg:w-[100%] lg:h-[200px] flex flex-col  items-center justify-center  rounded-t-3xl bg-primary md:px-4  lg:col-start-1  shadow-lg shadow-primary   ">
           <img
             src="especialidades/odontologiaGeneral.png"
             alt="Imagen 1"

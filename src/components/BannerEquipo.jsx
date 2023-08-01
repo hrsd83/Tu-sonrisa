@@ -61,7 +61,7 @@ const BannerEquipo = () => {
               </a>
             </div>
           </div>
-          <div className="w-full  bg-primary rounded-xl opacity-95   ">
+          <div className="w-full  bg-primary rounded-xl opacity-95 shadow-md shadow-primary   ">
             <img
               src="/banner/imgBanner.webp"
               alt="Imagen"

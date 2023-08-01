@@ -1,10 +1,32 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-scroll";
-// import logo_sonrisa from '../assets/img/logo_sonrisa.png';
 
 const NavBar = () => {
+  // SCROLL AL HEADER
+  const [showHeader, setShowHeader] = useState(true);
+
+    useEffect (() =>{
+      const handleScroll = () => {
+        const scrollposition = window.pageYOffset;
+
+        if (scrollposition > 0 ) {
+          setShowHeader(false);
+        }else{
+          setShowHeader(true);
+        }
+      }
+      window.addEventListener("scroll" , handleScroll);
+      return() => {
+        window.removeEventListener("scroll", handleScroll);
+      }
+    }, []);
+
+
+
+
+    
   const [nav, setNav] = useState(false);
   const linksToggle = [
     {
@@ -33,7 +55,8 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className=" w-full h-[150px]  bg-primary py-6 fixed  z-50">
+    <nav className={ ` w-full h-[150px]  bg-primary py-6 fixed z-50 ${showHeader ? "opacity-100" :" opacity-0 pointer-events-none" }` } > 
+    
       <div className="w-full hidden sm:hidden lg:flex  items-center text-center justify-evenly h-12 bg-black absolute top-0 ">
         <p className="text-xl  text-red-600 animate-bounce">
           EMERGENCIAS ODONTOLÓGICAS
