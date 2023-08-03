@@ -1,4 +1,5 @@
 import { FaFacebook, FaInstagram } from "react-icons/fa";
+import WhatsAppButton from "./WhatsAppButton";
 const Footer = () => {
   return (
     <footer className="w-full h-full  md:h-[300px] bg-primary py-4 mt-20 ">
@@ -47,6 +48,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <WhatsAppButton/>
     </footer>
   );
 };
