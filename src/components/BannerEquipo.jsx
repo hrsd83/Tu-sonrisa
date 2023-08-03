@@ -1,26 +1,20 @@
 import { useEffect, useState } from "react";
 const BannerEquipo = () => {
      const [text, setText] = useState("");
-     const frase = ["nuestro equipo"];
-
+      const frase = "nuestro equipo";
      useEffect(() => {
        let currentFraseIndex = 0;
        let currentText = '';
        let isDeleting = false;
        let typingSpeed = 100;
-
        const type = () => {
-        // ANIMACION CON USESTATE Y USEEFFECT EN EL PARRAFO DE TRABAJA EN NUESTRO EQUIPO
-         const currentFrase = frase[currentFraseIndex];
-
+          const currentFrase = frase;
          if (isDeleting) {
-           currentText = currentFrase.substring(0, currentText.length - 1);
+           currentText = currentFrase.slice(0, currentText.length - 1);
          } else {
-           currentText = currentFrase.substring(0, currentText.length + 1);
+           currentText = currentFrase.slice(0, currentText.length + 1);
          }
-
          setText(currentText);
-
          if (!isDeleting && currentText === currentFrase) {
            isDeleting = true;
            typingSpeed = 100;
@@ -32,19 +26,15 @@ const BannerEquipo = () => {
          setTimeout(type, typingSpeed);
        };
        type();
-     // eslint-disable-next-line react-hooks/exhaustive-deps
      }, []);
-  
   return (
     <section className="bg-white py-8 mt-10 opacity-95">
       <div className="container mx-auto ">
-        {/* <h2 className="text-5xl font-bold  mb-4">Trabaja en nuestro equipo</h2> */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
           <div className=" p-4 ">
             <h2 className="text-5xl text-left font-bold  mb-4 animate-blink">
               Trabaja en {text}
             </h2>
-
             <div className="flex mb-4 bg mt-20 items-center justify-center 
              ">
               <a
@@ -73,6 +63,4 @@ const BannerEquipo = () => {
     </section>
   );
 };
-
 export default BannerEquipo;
-

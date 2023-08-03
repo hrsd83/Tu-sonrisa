@@ -3,6 +3,7 @@ import Carousel from "./components/Carousel"
 import Hero from "./components/Hero";
 import BannerEquipo from "./components/BannerEquipo";
 import CarouselEspecialistas from "./components/CarouselEspecialistas";
+import Article from "./components/Article";
 
 function App() {
 
@@ -13,6 +14,8 @@ function App() {
       <Hero />
       <BannerEquipo />
       <CarouselEspecialistas/>
+      <Article/>
+      
     </>
   );
 }

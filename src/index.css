@@ -1,4 +1,11 @@
 
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .btn-reserva{
     @apply w-36 h-10 bg-red-500 text-center mt-3 rounded-md hover:bg-red-600 transition duration-300 
 }
@@ -8,9 +15,6 @@
 }
 
 
-
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+.article-grid{
+    @apply w-full h-40 flex bg-violet-100 border-2 border-primary items-center justify-center  rounded-3xl 
+}
