@@ -28,8 +28,8 @@ const BannerEquipo = () => {
        type();
      }, []);
   return (
-    <section className="bg-white py-8 mt-10 opacity-95">
-      <div className="container mx-auto ">
+    <section className="bg-violet-100 py-8  opacity-95">
+      <div className="container mx-auto mt-20 ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
           <div className=" p-4 ">
             <h2 className="text-5xl text-left font-bold text-secondary  mb-4 animate-blink">

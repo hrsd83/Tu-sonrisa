@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import BannerEquipo from "./components/BannerEquipo";
 import CarouselEspecialistas from "./components/CarouselEspecialistas";
 import Article from "./components/Article";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <BannerEquipo />
       <CarouselEspecialistas/>
       <Article/>
+      <Footer/>
       
     </>
   );

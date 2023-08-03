@@ -7,8 +7,8 @@ import { useEffect } from "react";
 const images = [
   {
     id: 1,
-    src: "",
-    name: "",
+    src: "/especialistas/billgates.jpg",
+    name: "Nombre 1 ",
     position: "Cargo 1",
   },
   {
@@ -83,7 +83,7 @@ const Carousel = () => {
     infinite: true,
     speed: 1000,
     slidesToShow: 6,
-    slidesToScroll:1,
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 640,
@@ -109,31 +109,34 @@ const Carousel = () => {
     ],
   };
   return (
-    <div className="container mx-auto mt-20">
-      <div className="flex flex-col p-5 ">
-        <p className="flex font-semibold text-xl">NUESTRO EQUIPO</p>
-        <p className="flex text-primary text-4xl">Contamos con </p>
-        <div className="w-[350px]   md:w-[560px] bg-primary text-center p-2  mt-1">
-          <p className="text-white text-xl  md:text-4xl">EXPERIMENTADOS ESPECIALISTAS</p>
-        </div>
-      </div>
-      <Slider ref={sliderRef} {...settings}>
-        {images.map((image) => (
-          <div key={image.id} className="px-0 mt-16 ">
-            <img
-              src={image.src}
-              alt={image.name}
-              className="rounded-full bg-primary w-40 h-40 mx-auto "
-            />
-            <div className="text-center mt-4">
-              <h3 className="text-lg font-semibold">{image.name}</h3>
-              <p className="text-gray-500">{image.position}</p>
-            </div>
+    <div className="w-full bg-violet-100">
+      <div className=" container mx-auto  bg-violet-100">
+        <div className="flex flex-col p-5 ">
+          <p className="flex font-semibold text-xl">NUESTRO EQUIPO</p>
+          <p className="flex text-primary text-4xl">Contamos con </p>
+          <div className="w-[350px]   md:w-[560px] bg-primary text-center p-2  mt-1">
+            <p className="text-white text-xl  md:text-4xl">
+              EXPERIMENTADOS ESPECIALISTAS
+            </p>
           </div>
-        ))}
-      </Slider>
+        </div>
+        <Slider ref={sliderRef} {...settings}>
+          {images.map((image) => (
+            <div key={image.id} className="px-0 mt-16 ">
+              <img
+                src={image.src}
+                alt={image.name}
+                className="rounded-full bg-primary w-40 h-40 mx-auto "
+              />
+              <div className="text-center mt-4">
+                <h3 className="text-lg font-semibold">{image.name}</h3>
+                <p className="text-gray-500">{image.position}</p>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 };
 export default Carousel;
-
