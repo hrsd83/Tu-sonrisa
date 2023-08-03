@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 const BannerEquipo = () => {
      const [text, setText] = useState("");
-      const frase = "nuestro equipo";
+      const frase = "equipo";
      useEffect(() => {
        let currentFraseIndex = 0;
        let currentText = '';
@@ -32,8 +32,8 @@ const BannerEquipo = () => {
       <div className="container mx-auto ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
           <div className=" p-4 ">
-            <h2 className="text-5xl text-left font-bold  mb-4 animate-blink">
-              Trabaja en {text}
+            <h2 className="text-5xl text-left font-bold text-secondary  mb-4 animate-blink">
+              Trabaja en nuestro {text}
             </h2>
             <div className="flex mb-4 bg mt-20 items-center justify-center 
              ">
