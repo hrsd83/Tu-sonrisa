@@ -12,7 +12,7 @@ const Footer = () => {
             />
           </a>
         </div>
-        <div className="order-1 md:order-2 flex flex-col items-center md:items-start mb-4 md:mb-0">
+        <div className="order-1 md:order-2 flex flex-col items-center px-10 md:items-start mb-4 md:mb-0">
           <p className="mb-2 text-white text-xl text-center">Horario :</p>
           <p className="mb-2 text-white text-xl text-center">
             Lunes a sábados de 8:00 A 19:30 horas
