@@ -114,8 +114,8 @@ const Carousel = () => {
         <div className="flex flex-col p-5 ">
           <p className="flex font-semibold text-xl">NUESTRO EQUIPO</p>
           <p className="flex text-primary text-4xl">Contamos con </p>
-          <div className="w-[350px]   md:w-[560px] bg-primary text-center p-2  mt-1">
-            <p className="text-white text-xl  md:text-4xl">
+          <div className="w-[300px]   md:w-[560px]  bg-primary  text-center p-2  mt-1">
+            <p className="text-white text-[18px]   md:text-4xl">
               EXPERIMENTADOS ESPECIALISTAS
             </p>
           </div>
