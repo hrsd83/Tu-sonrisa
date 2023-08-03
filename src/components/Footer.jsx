@@ -13,16 +13,16 @@ const Footer = () => {
           </a>
         </div>
         <div className="order-1 md:order-2 flex flex-col items-center md:items-start mb-4 md:mb-0">
-          <p className="mb-2 text-white text-xl">Horario :</p>
-          <p className="mb-2 text-white text-xl">
+          <p className="mb-2 text-white text-xl text-center">Horario :</p>
+          <p className="mb-2 text-white text-xl text-center">
             Lunes a sábados de 8:00 A 19:30 horas
           </p>
-          <p className="mb-2 text-white text-xl">
+          <p className="mb-2 text-white text-xl text-center">
             Domingos y feriados de 9:00 A 15:00 horas
           </p>
-          <p className="mb-2 text-white text-xl">Emergencias Odontológicas</p>
-          <p className="mb-2 text-white text-xl">+54 9 1139867665</p>
-          <p className="mb-2 text-white text-xl">
+          <p className="mb-2 text-white text-xl text-center">Emergencias Odontológicas</p>
+          <p className="mb-2 text-white text-xl text-center">+54 9 1139867665</p>
+          <p className="mb-2 text-white text-xl text-center">
             Av. Santa Fe 2755 piso 8 Recoleta / CABA
           </p>
         </div>
