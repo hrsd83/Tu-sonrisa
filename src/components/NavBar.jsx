@@ -3,30 +3,34 @@ import { AiFillCloseCircle } from "react-icons/ai";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-scroll";
 
+ 
 const NavBar = () => {
+ const handleButtonClick = () => {
+  const phoneNumber = "+5491143998712";
+   window.open(`https://wa.me/${phoneNumber}`, "_blank");
+   // Lógica específica para el evento onClick del botón
+   console.log("Se hizo clic en el botón");
+ };
+  
   // SCROLL AL HEADER
   const [showHeader, setShowHeader] = useState(true);
 
-    useEffect (() =>{
-      const handleScroll = () => {
-        const scrollposition = window.pageYOffset;
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollposition = window.pageYOffset;
 
-        if (scrollposition > 0 ) {
-          setShowHeader(false);
-        }else{
-          setShowHeader(true);
-        }
+      if (scrollposition > 0) {
+        setShowHeader(false);
+      } else {
+        setShowHeader(true);
       }
-      window.addEventListener("scroll" , handleScroll);
-      return() => {
-        window.removeEventListener("scroll", handleScroll);
-      }
-    }, []);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
-
-
-
-    
   const [nav, setNav] = useState(false);
   const linksToggle = [
     {
@@ -40,6 +44,7 @@ const NavBar = () => {
     {
       id: 3,
       link: "RESERVA TURNO",
+      onClick:  handleButtonClick() ,
     },
   ];
 
@@ -55,8 +60,11 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className={ ` w-full h-[150px]  bg-primary py-6 fixed z-50 ${showHeader ? "opacity-100" :" opacity-0 pointer-events-none" }` } > 
-    
+    <nav
+      className={` w-full h-[150px]  bg-primary py-6 fixed z-50 ${
+        showHeader ? "opacity-100" : " opacity-0 pointer-events-none"
+      }`}
+    >
       <div className="w-full hidden sm:hidden lg:flex  items-center text-center justify-evenly h-12 bg-black absolute top-0 ">
         <p className="text-xl  text-red-600 animate-bounce">
           EMERGENCIAS ODONTOLÓGICAS
@@ -88,7 +96,7 @@ const NavBar = () => {
           {links.map(({ id, link }) => (
             <a
               key={id}
-              href=""
+              href="#"
               className=" text-white text-center rounded-md mr-8 w-44 h-10 hover:bg-white hover:text-primary transition duration-300  cursor-pointer"
             >
               {link}
@@ -99,6 +107,7 @@ const NavBar = () => {
         <div className="lg:flex hidden btn-reserva mt-5 animate-bounce  ">
           <a
             href=""
+            onClick={handleButtonClick}
             className=" text-white text-center flex m-1 justify-center mt-2 "
           >
             RESERVAR TURNO
@@ -107,10 +116,11 @@ const NavBar = () => {
         {/* Menu Toggle */}
         {nav && (
           <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-primary text-white    opacity-95 ">
-            {linksToggle.map(({ id, link }) => (
+            {linksToggle.map(({ id, link, onClick }) => (
               <li
                 key={id}
                 className="px-4 cursor-pointer capitalize py-6 text-2xl  "
+                onClick={onClick}
               >
                 <Link
                   onClick={() => setNav(!nav)}
@@ -128,7 +138,6 @@ const NavBar = () => {
       </div>
     </nav>
   );
-  
 };
 
 

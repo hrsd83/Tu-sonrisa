@@ -21,8 +21,12 @@ const Footer = () => {
           <p className="mb-2 text-white text-xl text-center">
             Domingos y feriados de 9:00 A 15:00 horas
           </p>
-          <p className="mb-2 text-white text-xl text-center">Emergencias Odontológicas</p>
-          <p className="mb-2 text-white text-xl text-center">+54 9 1139867665</p>
+          <p className="mb-2 text-white text-xl text-center">
+            Emergencias Odontológicas
+          </p>
+          <p className="mb-2 text-white text-xl text-center">
+            +54 9 1139867665
+          </p>
           <p className="mb-2 text-white text-xl text-center">
             Av. Santa Fe 2755 piso 8 Recoleta / CABA
           </p>
