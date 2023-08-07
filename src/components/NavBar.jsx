@@ -3,15 +3,10 @@ import { AiFillCloseCircle } from "react-icons/ai";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-scroll";
 
+
+
  
 const NavBar = () => {
- const handleButtonClick = () => {
-  const phoneNumber = "+5491143998712";
-   window.open(`https://wa.me/${phoneNumber}`, "_blank");
-   // Lógica específica para el evento onClick del botón
-   console.log("Se hizo clic en el botón");
- };
-  
   // SCROLL AL HEADER
   const [showHeader, setShowHeader] = useState(true);
 
@@ -35,27 +30,35 @@ const NavBar = () => {
   const linksToggle = [
     {
       id: 1,
-      link: "Especialidades",
+      title: "Especialidades",
     },
     {
       id: 2,
-      link: "Nuestro Equipo",
+      title: "Especialistas",
     },
     {
+      id: 2,
+      title: "Trabaja con nosotros",
+    },
+
+    {
       id: 3,
-      link: "RESERVA TURNO",
-      onClick:  handleButtonClick() ,
+      title: "RESERVA TURNO",
+    },
+    {
+      id: 4,
+      title: "Siguenos",
     },
   ];
 
   const links = [
     {
       id: 1,
-      link: "Especialidades",
+      title: "Especialidades",
     },
     {
       id: 2,
-      link: "Nuestro Equipo",
+      title: "Especialistas",
     },
   ];
 
@@ -77,7 +80,7 @@ const NavBar = () => {
 
       <div className=" container mx-auto flex px-8 xl:px-0 mt-10 ">
         <div className="flex flex-grow">
-          <a href="#">
+          <a href="https://tu-sonrisa.vercel.app/">
             <img src="carousel/logo_sonrisa.png"></img>
           </a>
         </div>
@@ -92,22 +95,24 @@ const NavBar = () => {
           )}
         </div>
 
-        <div className="lg:flex hidden  flex-grow text-2xl  justify-evenly mt-5">
-          {links.map(({ id, link }) => (
-            <a
+        <div className="lg:flex hidden flex-grow text-2xl justify-evenly mt-5">
+          {links.map(({ id, title }) => (
+            <Link
               key={id}
-              href="#"
-              className=" text-white text-center rounded-md mr-8 w-44 h-10 hover:bg-white hover:text-primary transition duration-300  cursor-pointer"
+              to={title}
+              offset={40}
+              smooth
+              duration={1000}
+              className="text-white text-center rounded-md mr-8 w-44 h-10 hover:bg-white hover:text-primary transition duration-300 cursor-pointer"
             >
-              {link}
-            </a>
+              {title}
+            </Link>
           ))}
         </div>
 
         <div className="lg:flex hidden btn-reserva mt-5 animate-bounce  ">
           <a
-            href=""
-            onClick={handleButtonClick}
+            href="https://wa.me/+541143998712"
             className=" text-white text-center flex m-1 justify-center mt-2 "
           >
             RESERVAR TURNO
@@ -116,20 +121,19 @@ const NavBar = () => {
         {/* Menu Toggle */}
         {nav && (
           <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-primary text-white    opacity-95 ">
-            {linksToggle.map(({ id, link, onClick }) => (
+            {linksToggle.map(({ id, title }) => (
               <li
                 key={id}
                 className="px-4 cursor-pointer capitalize py-6 text-2xl  "
-                onClick={onClick}
               >
                 <Link
                   onClick={() => setNav(!nav)}
-                  to={link}
-                  offset={-80}
+                  to={title}
+                  offset={40}
                   smooth
                   duration={400}
                 >
-                  {link}
+                  {title}
                 </Link>
               </li>
             ))}

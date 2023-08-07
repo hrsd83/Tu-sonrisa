@@ -2,10 +2,11 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 import WhatsAppButton from "./WhatsAppButton";
 const Footer = () => {
   return (
-    <footer className="w-full h-full  md:h-[300px] bg-primary py-4 mt-20 ">
+    <footer name = "Siguenos"
+     className="w-screen h-full  md:h-[300px] bg-primary py-4 mt-20 ">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between mt-10 ">
         <div className="order-2 md:order-1">
-          <a href="#">
+          <a href="https://tu-sonrisa.vercel.app/">
             <img
               src="/carousel/logo_sonrisa.png"
               alt="Imagen"
@@ -50,9 +51,9 @@ const Footer = () => {
               <FaInstagram className="text-5xl text-white hover:text-orange-500 transition-colors duration-300" />
             </a>
           </div>
+          <WhatsAppButton />
         </div>
       </div>
-      <WhatsAppButton/>
     </footer>
   );
 };

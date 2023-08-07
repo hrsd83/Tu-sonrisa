@@ -28,15 +28,20 @@ const BannerEquipo = () => {
        type();
      }, []);
   return (
-    <section className="bg-violet-100 py-8  opacity-95">
+    <section
+      name="Trabaja con nosotros"
+      className="w-full bg-violet-100 py-8  opacity-95"
+    >
       <div className="container mx-auto mt-20 ">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
           <div className=" p-4 ">
             <h2 className="text-5xl text-left font-bold text-secondary  mb-4 animate-blink">
               Trabaja en nuestro {text}
             </h2>
-            <div className="flex mb-4 bg mt-20 items-center justify-center 
-             ">
+            <div
+              className="flex mb-4 bg mt-20 items-center justify-center 
+             "
+            >
               <a
                 href="enlace-1"
                 className="bg-primary hover:bg-violet-600 rounded-md text-white text-center text-xl px-12 py-3 mr-2  md:px-10 md:py-0 lg:px-10 lg:py-3 "

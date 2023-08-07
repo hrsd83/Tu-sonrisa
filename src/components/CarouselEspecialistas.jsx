@@ -109,7 +109,8 @@ const Carousel = () => {
     ],
   };
   return (
-    <div className="w-full bg-violet-100">
+    <div name = "Especialistas"
+     className="w-full bg-violet-100">
       <div className=" container mx-auto  bg-violet-100">
         <div className="flex flex-col p-5 ">
           <p className="flex font-semibold text-xl">NUESTRO EQUIPO</p>
