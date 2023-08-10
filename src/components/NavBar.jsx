@@ -1,12 +1,19 @@
-import { useState, useEffect } from "react";
+
 import { AiFillCloseCircle } from "react-icons/ai";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-scroll";
+import { useLocation} from "react-router-dom";
+import { useState, useEffect } from "react";
+
+
 
 
 
  
-const NavBar = () => {
+export const NavBar = () => {
+  // logica para la ruta raiz del proyecto
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
   // SCROLL AL HEADER
   const [showHeader, setShowHeader] = useState(true);
 
@@ -14,7 +21,7 @@ const NavBar = () => {
     const handleScroll = () => {
       const scrollposition = window.pageYOffset;
 
-      if (scrollposition > 0) {
+      if (scrollposition > 0 && isHomePage) {
         setShowHeader(false);
       } else {
         setShowHeader(true);
@@ -24,9 +31,10 @@ const NavBar = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [isHomePage]);
 
   const [nav, setNav] = useState(false);
+  
   const linksToggle = [
     {
       id: 1,
@@ -34,16 +42,11 @@ const NavBar = () => {
     },
     {
       id: 2,
-      title: "Especialistas",
+      title: "Nuestro equipo",
     },
-    {
-      id: 2,
-      title: "Trabaja con nosotros",
-    },
-
     {
       id: 3,
-      title: "RESERVA TURNO",
+      title: "Trabaja con nosotros",
     },
     {
       id: 4,
@@ -53,14 +56,18 @@ const NavBar = () => {
 
   const links = [
     {
-      id: 1,
+      id: 5,
       title: "Especialidades",
+      route: "/",
     },
     {
-      id: 2,
-      title: "Especialistas",
+      id: 6,
+      title: "Nuestro equipo",
+      route: "/",
+      
     },
   ];
+
 
   return (
     <nav
@@ -102,7 +109,7 @@ const NavBar = () => {
               to={title}
               offset={40}
               smooth
-              duration={1000}
+              duration={800}
               className="text-white text-center rounded-md mr-8 w-44 h-10 hover:bg-white hover:text-primary transition duration-300 cursor-pointer"
             >
               {title}
@@ -121,9 +128,9 @@ const NavBar = () => {
         {/* Menu Toggle */}
         {nav && (
           <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-primary text-white    opacity-95 ">
-            {linksToggle.map(({ id, title }) => (
+            {linksToggle.map(({ id, title },index) => (
               <li
-                key={id}
+                key={`toggle-${id}-${index}`}
                 className="px-4 cursor-pointer capitalize py-6 text-2xl  "
               >
                 <Link
@@ -131,7 +138,7 @@ const NavBar = () => {
                   to={title}
                   offset={40}
                   smooth
-                  duration={400}
+                  duration={2000}
                 >
                   {title}
                 </Link>
