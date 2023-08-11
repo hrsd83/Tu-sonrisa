@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import NavBar from "../NavBar";
 import Footer from "../Footer";
 
 export const Ortodoncia = () => {
+  useEffect(() => {
+    window.scrollTo(0, 30);
+  }, []);
   return (
     <div className="flex flex-col min-h-screen">
       <NavBar />

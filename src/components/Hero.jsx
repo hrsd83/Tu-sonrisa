@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Hero = () => {
+  
   const phoneNumber = "+541143998712";
 
   const renderCard = (imageSrc, title, route) => {

@@ -1,15 +1,9 @@
-
 import { AiFillCloseCircle } from "react-icons/ai";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { Link } from "react-scroll";
-import { useLocation} from "react-router-dom";
+import { Link   } from "react-scroll";
+import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-
-
-
-
- 
 export const NavBar = () => {
   // logica para la ruta raiz del proyecto
   const location = useLocation();
@@ -34,7 +28,7 @@ export const NavBar = () => {
   }, [isHomePage]);
 
   const [nav, setNav] = useState(false);
-  
+
   const linksToggle = [
     {
       id: 1,
@@ -58,16 +52,12 @@ export const NavBar = () => {
     {
       id: 5,
       title: "Especialidades",
-      route: "/",
     },
     {
       id: 6,
       title: "Nuestro equipo",
-      route: "/",
-      
     },
   ];
-
 
   return (
     <nav
@@ -128,7 +118,7 @@ export const NavBar = () => {
         {/* Menu Toggle */}
         {nav && (
           <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-primary text-white    opacity-95 ">
-            {linksToggle.map(({ id, title },index) => (
+            {linksToggle.map(({ id, title }, index) => (
               <li
                 key={`toggle-${id}-${index}`}
                 className="px-4 cursor-pointer capitalize py-6 text-2xl  "
@@ -150,6 +140,5 @@ export const NavBar = () => {
     </nav>
   );
 };
-
 
 export default NavBar;
